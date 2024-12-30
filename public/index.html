@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Web - Tailwind</title>
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body class="font-Roboto text-gray-700">
+    <!-- navbar -->
+    <header>
+      <nav class="py-2">
+        <div class="flex justify-between items-center px-10">
+          <!-- left -->
+          <a href="">
+            <img
+              class="  "
+              src="http://demo.roadthemes.com/pedona/wp-content/uploads/2018/10/logo1.png"
+              alt=""
+            />
+          </a>
+          <!-- center -->
+          <ul class="flex gap-3 font-bold text-[#0a4254] text-lg">
+            <li><a class="text-hover" href="">Home</a></li>
+            <li><a class="text-hover" href="">About</a></li>
+            <li><a class="text-hover" href="">Furntiure</a></li>
+            <li><a class="text-hover" href="">Grocery</a></li>
+            <li><a class="text-hover" href="">Flower</a></li>
+            <li><a class="text-hover" href="">Food</a></li>
+            <li><a class="text-hover" href="">Sport</a></li>
+            <li><a class="text-hover" href="">Contact Us</a></li>
+            <li><a class="text-hover" href="">Location</a></li>
+          </ul>
+          <!-- right -->
+          <ul class="flex gap-3 text-lg text-[#0a4254]">
+            <li>
+              <a class="text-hover" href=""
+                ><i class="fa-regular fa-user"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-hover" href=""
+                ><i class="fa-regular fa-heart"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-hover" href=""
+                ><i class="fa-solid fa-box-open"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-hover" href=""><i class="fa-solid fa-gear"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-center py-2">
+          <input
+            class="w-[650px] py-2 font-light px-7 border-[2px] border-solid border-[#0a4254] rounded-[70px_0_0_70px]"
+            type="text"
+            placeholder="Search"
+          />
+          <button class="text-hover rounded-[0_70px_70px_0] px-7 bg-[#0a4254]">
+            <i class="fa-solid fa-magnifying-glass text-xl text-gray-200"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Banner  -->
+    <section class="w-[100%] h-[70vh]">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide relative">
+            <img
+              src="https://wordpressthemes.live/WCG8/WCM187_wooti/furniture02/wp-content/uploads/2024/09/Slider-01.jpg"
+              alt=""
+            />
+            <div class="absolute left-[200px] text-start text-gray-800">
+              <span class="font-light text-gray-700">Sale 20% off</span>
+              <h2 class="text-7xl font-normal my-3">
+                Interior Decoration <br />
+                For Your Home
+              </h2>
+              <button
+                class="text-md bg-[#0a4254] px-10 py-2 rounded-3xl text-gray-200 bg-hover"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide relative">
+            <img
+              src=" https://wordpressthemes.live/WCG8/WCM187_wooti/grocery/wp-content/uploads/revslider/slider/main-banner1.jpg"
+              alt=""
+            />
+            <div class="absolute left-[200px] text-start text-gray-800">
+              <h2 class="text-7xl font-normal my-3">
+                Fruite & Vegetable <br />
+                Buy &99 Get $19 OFF!
+              </h2>
+              <span class="font-light text-gray-700">Limited time ofter!</span>
+              <div class="py-2">
+                <span class="text-5xl font-bold">$78.00</span>
+                <span class="line-through text-2xl text-gray-500">$99.00</span>
+              </div>
+              <button
+                class="text-md bg-[#0a4254] px-10 py-2 rounded-3xl text-gray-200 bg-hover"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://wordpressthemes.live/WCG8/WCM187_wooti/flower/wp-content/uploads/revslider/slider/slider1.png"
+              alt=""
+            />
+            <div class="absolute left-[200px] text-start text-gray-800">
+              <span class="font-light text-gray-700">FLAT 25% DISCOUNT</span>
+              <h2 class="text-7xl font-normal my-3">
+                Let's Make <br />
+                Beautiful Flowers <br />
+                A Part of Your Life
+              </h2>
+              <button
+                class="text-md bg-[#0a4254] px-10 py-2 rounded-3xl text-gray-200 bg-hover"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="http://demo.roadthemes.com/pedona/wp-content/uploads/2018/06/revo3.jpg"
+              alt=""
+            />
+            <div class="absolute left-[200px] text-start text-gray-200">
+              <span class="font-light text-gray-300">Sale Ofter 10% Off </span>
+              <h2 class="text-7xl font-normal my-3">
+                Pendona Air Zoom <br />
+                Mariah Flynit Reacer <br />
+                A Part of Your Life
+              </h2>
+              <button
+                class="text-md bg-[#0a4254] px-10 py-2 rounded-3xl text-gray-200 bg-hover"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- support -->
+    <section class="p-[100px_0_0]">
+      <div class="flex justify-center gap-[100px]">
+        <div class="flex gap-5 w-[280px]">
+          <i class="fa-solid fa-truck text-5xl text-gray-500"></i>
+          <div class="">
+            <h2 class="font-medium">Free Shipping</h2>
+            <span class="font-light text-sm"
+              >Free Shipping for orders $199
+            </span>
+          </div>
+        </div>
+        <div class="flex gap-5 w-[280px]">
+          <i class="fa-solid fa-money-bill text-5xl text-gray-500"></i>
+          <div class="">
+            <h2 class="font-medium">Returns Policy</h2>
+            <span class="font-light text-sm">
+              Within 30 days for an exchange
+            </span>
+          </div>
+        </div>
+        <div class="flex gap-5 w-[280px]">
+          <i class="fa-solid fa-phone text-5xl text-gray-500"></i>
+          <div class="">
+            <h2 class="font-medium">Online Support</h2>
+            <span class="font-light text-sm">
+              24 hours a day, 7 days a week
+            </span>
+          </div>
+        </div>
+        <div class="flex gap-5 w-[280px]">
+          <i class="fa-solid fa-credit-card text-5xl text-gray-500"></i>
+          <div class="">
+            <h2 class="font-medium">Flexible Payment</h2>
+            <span class="font-light text-sm">
+              Pay with Multiple Credit cards
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product furntiure -->
+    <section class="">
+      <h2 class="text-5xl text-center p-[100px]">Best Selling</h2>
+      <div class="flex justify-center">
+        <div class="w-[70%] grid grid-cols-4 gap-[70px]">
+          <div class="relative w-[335px] bg-red-300">
+            <div class="absolute top-0 cursor-pointer">
+              <img
+                src="https://wordpressthemes.live/WCG8/WCM187_wooti/furniture02/wp-content/uploads/2023/10/13_02-327x375.jpg   "
+                alt=""
+              />
+            </div>
+            <div class="absolute top-0 hover:opacity-0 cursor-pointer">
+              <img
+                src="https://wordpressthemes.live/WCG8/WCM187_wooti/furniture02/wp-content/uploads/2023/10/13-327x375.jpg"
+                alt=""
+              />
+            </div>
+            <div class="absolute top-[400px]">
+              <h3 class="text-lg font-light">
+                Metal Storage Cabinet With 2 Drawer and 2 Doors
+              </h3>
+              <div class="text-yellow-500 text-sm">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span class="font-light text-sm">$249 - $300</span>
+            </div>
+          </div>
+          <div class="relative w-[335px] bg-red-300">
+            <div class="absolute top-0 cursor-pointer">
+              <img
+                src="https://wordpressthemes.live/WCG8/WCM187_wooti/furniture02/wp-content/uploads/2023/10/16_02-327x375.jpg"
+                alt=""
+              />
+            </div>
+            <div class="absolute top-0 hover:opacity-0 cursor-pointer">
+              <img
+                src="https://wordpressthemes.live/WCG8/WCM187_wooti/furniture02/wp-content/uploads/2023/10/16-327x375.jpg"
+                alt=""
+              />
+            </div>
+            <div class="absolute top-[400px]">
+              <h3 class="text-lg font-light">
+                News Mark Impex Side Table, 2 Tier,Round Tray Table
+              </h3>
+              <div class="text-yellow-500 text-sm">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span class="font-light text-sm"> $400</span>
+            </div>
+          </div>
+          <div class="relative w-[335px] bg-red-300">
+            <div class="absolute top-0 cursor-pointer">
+              <img
+                src="https://wordpressthemes.live/WCG8/WCM187_wooti/furniture02/wp-content/uploads/2023/10/15_02-327x375.jpg"
+                alt=""
+              />
+            </div>
+            <div class="absolute top-0 hover:opacity-0 cursor-pointer">
+              <img
+                src="https://wordpressthemes.live/WCG8/WCM187_wooti/furniture02/wp-content/uploads/2023/10/15-327x375.jpg"
+                alt=""
+              />
+            </div>
+            <div class="absolute top-[400px]">
+              <h3 class="text-lg font-light">
+                Pelican Essentials Palo Sofa Ottoman Sofa Set
+              </h3>
+              <div class="text-yellow-500 text-sm">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span class="font-light text-sm">$119 - $229</span>
+            </div>
+          </div>
+          <div class="relative w-[335px] bg-red-300">
+            <div class="absolute top-0 cursor-pointer">
+              <img
+                src="https://wordpressthemes.live/WCG8/WCM187_wooti/furniture02/wp-content/uploads/2023/10/22_02-327x375.jpg"
+                alt=""
+              />
+            </div>
+            <div class="absolute top-0 hover:opacity-0 cursor-pointer">
+              <img
+                src="https://wordpressthemes.live/WCG8/WCM187_wooti/furniture02/wp-content/uploads/2023/10/22-327x375.jpg"
+                alt=""
+              />
+            </div>
+            <div class="absolute top-[400px]">
+              <h3 class="text-lg font-light">
+                Ikea Hol Acacia Side Table Wooden
+              </h3>
+              <div class="text-yellow-500 text-sm">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span class="font-light text-sm">$300</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner furntiure -->
+    <section class="m-[700px_0_0]">
+      <div class="flex justify-center gap-6">
+        <div class="relative w-[60vw]">
+          <img
+            class="w-[100%] h-[100%]"
+            src="https://wordpressthemes.live/WCG8/WCM187_wooti/furniture02/wp-content/uploads/2024/09/Banner-01.jpg"
+            alt=""
+          />
+          <div class="absolute top-[25%] left-[50px] text-start text-gray-800">
+            <span class="font-light text-gray-700">Furntiure Sale Aterl</span>
+            <h2 class="text-4xl font-normal my-3 font-Libre">
+              Amazing Deals On Stylish <br />
+              Furntiure Today
+            </h2>
+            <button class="text-md py-2 rounded-3x btn-hover">
+              Shop Now <i class="text-[#0a4254] fa-solid fa-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="relative w-[40vw]">
+          <img
+            class="w-[100%] h-[100%]"
+            src="https://wordpressthemes.live/WCG8/WCM187_wooti/furniture02/wp-content/uploads/2024/09/Banner-02.jpg"
+            alt=""
+          />
+          <div class="absolute top-[25%] left-[50px] text-start text-gray-800">
+            <span class="font-light text-gray-700">Flower vases</span>
+            <h2 class="text-4xl font-normal my-3 font-Libre">
+              Brihten Up With <br />
+              Furntiure Discount
+            </h2>
+            <button class="text-md py-2 rounded-3x btn-hover">
+              Shop Now <i class="text-[#0a4254] fa-solid fa-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- New Products -->
+    <section class="relative">
+      <h2 class="text-5xl text-center p-[100px]">New Arrivals Products</h2>
+      <div class="flex w-[100%] justify-center">
+        <div class="w-[70%] overflow-hidden">
+          <div class="flex slider gap-4">
+            <div class="slide">
+              <div class="w-[300px]">
+                <img
+                  class="w-[100%]"
+                  src="http://demo.roadthemes.com/pedona/wp-content/uploads/2018/06/10-450x450.jpg"
+                  alt=""
+                />
+                <div class=" ">
+                  <h3 class="text-lg font-light">
+                    Metal Storage Cabinet With 2 Drawer <br />
+                    and 2 Doors
+                  </h3>
+                  <div class="text-yellow-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="font-light text-sm">$249 - $300</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="w-[300px]">
+                <img
+                  class="w-[100%]"
+                  src="http://demo.roadthemes.com/pedona/wp-content/uploads/2018/06/9-450x450.jpg"
+                  alt=""
+                />
+                <div class=" ">
+                  <h3 class="text-lg font-light">
+                    Metal Storage Cabinet With 2 Drawer <br />
+                    and 2 Doors
+                  </h3>
+                  <div class="text-yellow-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="font-light text-sm">$249 - $300</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="w-[300px]">
+                <img
+                  class="w-[100%]"
+                  src="http://demo.roadthemes.com/pedona/wp-content/uploads/2018/06/2-2-450x450.jpg"
+                  alt=""
+                />
+                <div class=" ">
+                  <h3 class="text-lg font-light">
+                    Metal Storage Cabinet With 2 Drawer <br />
+                    and 2 Doors
+                  </h3>
+                  <div class="text-yellow-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="font-light text-sm">$249 - $300</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="w-[300px]">
+                <img
+                  class="w-[100%]"
+                  src="http://demo.roadthemes.com/pedona/wp-content/uploads/2018/06/28-28-450x450.jpg"
+                  alt=""
+                />
+                <div class=" ">
+                  <h3 class="text-lg font-light">
+                    Metal Storage Cabinet With 2 Drawer <br />
+                    and 2 Doors
+                  </h3>
+                  <div class="text-yellow-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="font-light text-sm">$249 - $300</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="w-[300px]">
+                <img
+                  class="w-[100%]"
+                  src="http://demo.roadthemes.com/pedona/wp-content/uploads/2018/06/5-5-450x450.jpg"
+                  alt=""
+                />
+                <div class=" ">
+                  <h3 class="text-lg font-light">
+                    Metal Storage Cabinet With 2 Drawer <br />
+                    and 2 Doors
+                  </h3>
+                  <div class="text-yellow-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="font-light text-sm">$249 - $300</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="w-[300px]">
+                <img
+                  class="w-[100%]"
+                  src="http://demo.roadthemes.com/pedona/wp-content/uploads/2018/06/19-19-450x450.jpg"
+                  alt=""
+                />
+                <div class=" ">
+                  <h3 class="text-lg font-light">
+                    Metal Storage Cabinet With 2 Drawer <br />
+                    and 2 Doors
+                  </h3>
+                  <div class="text-yellow-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="font-light text-sm">$249 - $300</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="w-[300px]">
+                <img
+                  class="w-[100%]"
+                  src="http://demo.roadthemes.com/pedona/wp-content/uploads/2018/06/27-27-450x450.jpg"
+                  alt=""
+                />
+                <div class=" ">
+                  <h3 class="text-lg font-light">
+                    Metal Storage Cabinet With 2 Drawer <br />
+                    and 2 Doors
+                  </h3>
+                  <div class="text-yellow-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="font-light text-sm">$249 - $300</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="w-[300px]">
+                <img
+                  class="w-[100%]"
+                  src="http://demo.roadthemes.com/pedona/wp-content/uploads/2018/06/8-8-450x450.jpg"
+                  alt=""
+                />
+                <div class=" ">
+                  <h3 class="text-lg font-light">
+                    Metal Storage Cabinet With 2 Drawer <br />
+                    and 2 Doors
+                  </h3>
+                  <div class="text-yellow-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="font-light text-sm">$249 - $300</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="w-[300px]">
+                <img
+                  class="w-[100%]"
+                  src="http://demo.roadthemes.com/pedona/wp-content/uploads/2018/06/24-24-450x450.jpg"
+                  alt=""
+                />
+                <div class=" ">
+                  <h3 class="text-lg font-light">
+                    Metal Storage Cabinet With 2 Drawer <br />
+                    and 2 Doors
+                  </h3>
+                  <div class="text-yellow-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="font-light text-sm">$249 - $300</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="w-[300px]">
+                <img
+                  class="w-[100%]"
+                  src="http://demo.roadthemes.com/pedona/wp-content/uploads/2018/06/19-450x450.jpg"
+                  alt=""
+                />
+                <div class=" ">
+                  <h3 class="text-lg font-light">
+                    Metal Storage Cabinet With 2 Drawer <br />
+                    and 2 Doors
+                  </h3>
+                  <div class="text-yellow-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="font-light text-sm">$249 - $300</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- btn -->
+      <div class="">
+        <button
+          class="btn-l absolute top-[65%] text-gray-100 left-[250px] text-hover text-5xl"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="btn-r absolute top-[65%] text-gray-100 right-[250px] text-hover text-5xl"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- banner  -->
+    <section class="py-10 overflow-hidden">
+      <div
+        class="bg-fixed h-[60vh] w-[100vw] flex items-center px-[15%]"
+        style="
+          background-image: url('http://demo.roadthemes.com/pedona/wp-content/uploads/2018/09/S2.jpg?id=17728');
+        "
+      >
+        <div class="w-[500px] text-center flex flex-col items-center">
+          <img
+            class="py-2"
+            src="http://demo.roadthemes.com/pedona/wp-content/uploads/2018/06/text-1.png"
+            alt=""
+          />
+          <h2 class="text-4xl font-Libre">
+            <span class="text-red-500">Hurry Up! </span> Daily Deal Of The Day
+          </h2>
+          <p class="font-light text-sm py-5">
+            Abdul, a young, widowed Muslim man, needed to leave Syria and not be
+            delayed by the authorities in getting to Europe. The best way to do
+            this, he reasoned, was to acquire another family as cover, and he
+            found one. It was all a sham.
+          </p>
+          <button
+            class="text-md bg-[#0a4254] px-[100px] py-3 rounded-3xl my-5 text-gray-200 red-hover"
+          >
+            Discover Now
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Product Flower -->
+    <section class="relative py-[50px]">
+      <h2 class="text-5xl text-center p-[100px]">Our Best Sellers</h2>
+      <div class="flex w-[100%] justify-center">
+        <div class="w-[70%] overflow-hidden">
+          <div class="flex sl gap-4">
+            <div class="s">
+              <div class="w-[300px]">
+                <img
+                  class="w-[100%]"
+                  src="https://wordpressthemes.live/WCG8/WCM187_wooti/flower/wp-content/uploads/2024/02/08-255x332.jpg"
+                  alt=""
+                />
+                <div class=" ">
+                  <h3 class="text-lg font-light">Creamy White Fake</h3>
+                  <div class="text-yellow-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="font-light text-sm">$150</span>
+                </div>
+              </div>
+            </div>
+            <div class="s">
+              <div class="w-[300px]">
+                <img
+                  class="w-[100%]"
+                  src="https://wordpressthemes.live/WCG8/WCM187_wooti/flower/wp-content/uploads/2024/02/09-255x332.jpg"
+                  alt=""
+                />
+                <div class=" ">
+                  <h3 class="text-lg font-light">Creamy White Fake</h3>
+                  <div class="text-yellow-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="font-light text-sm">$150</span>
+                </div>
+              </div>
+            </div>
+            <div class="s">
+              <div class="w-[300px]">
+                <img
+                  class="w-[100%]"
+                  src="https://wordpressthemes.live/WCG8/WCM187_wooti/flower/wp-content/uploads/2024/02/07-255x332.jpg"
+                  alt=""
+                />
+                <div class=" ">
+                  <h3 class="text-lg font-light">Creamy White Fake</h3>
+                  <div class="text-yellow-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="font-light text-sm">$150</span>
+                </div>
+              </div>
+            </div>
+            <div class="s">
+              <div class="w-[300px]">
+                <img
+                  class="w-[100%]"
+                  src="https://wordpressthemes.live/WCG8/WCM187_wooti/flower/wp-content/uploads/2024/02/06-255x332.jpg"
+                  alt=""
+                />
+                <div class=" ">
+                  <h3 class="text-lg font-light">Creamy White Fake</h3>
+                  <div class="text-yellow-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="font-light text-sm">$150</span>
+                </div>
+              </div>
+            </div>
+            <div class="s">
+              <div class="w-[300px]">
+                <img
+                  class="w-[100%]"
+                  src="https://wordpressthemes.live/WCG8/WCM187_wooti/flower/wp-content/uploads/2024/02/10-255x332.jpg"
+                  alt=""
+                />
+                <div class=" ">
+                  <h3 class="text-lg font-light">Creamy White Fake</h3>
+                  <div class="text-yellow-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="font-light text-sm">$150</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- btn -->
+      <div class="">
+        <button
+          class="btn-left absolute top-[65%] text-gray-100 left-[250px] text-hover text-5xl"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="btn-right absolute top-[65%] text-gray-100 right-[250px] text-hover text-5xl"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- Banner Flower -->
+    <section class="py-10 overflow-hidden relative">
+      <img
+        src="https://wordpressthemes.live/WCG8/WCM187_wooti/flower/wp-content/uploads/2024/07/parallex.png"
+        alt=""
+      />
+      <div
+        class="absolute top-[7%] mx-[50%] bg-fixed h-[60vh] w-[100vw] flex items-center"
+      >
+        <div class="flex flex-col items-start">
+          <span class="py-3"> OUR MISSION</span>
+          <h2 class="text-6xl font-Libre">
+            <span class="text-red-500"> We Pride Ourselves On </span> <br />
+            Sourcing On-trend Flowers
+          </h2>
+
+          <button
+            class="text-md bg-[#0a4254] px-[70px] py-3 rounded-3xl my-5 text-gray-200 red-hover"
+          >
+            Shop New
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- P_G -->
+    <section class="py-[100px]">
+      <h2 class="text-5xl text-center p-3">Popular</h2>
+      <div class="flex justify-center">
+        <div class="grid grid-cols-4 gap-4">
+          <div class="w-[300px]">
+            <img
+              class="w-[100%]"
+              src="https://wordpressthemes.live/WCG8/WCM187_wooti/grocery/wp-content/uploads/2023/10/32-300x300.jpg"
+              alt=""
+            />
+            <div class=" ">
+              <h3 class="text-lg font-light">
+                Papaya (Each) (Approx. 500 <br />
+                g-3500 g)
+              </h3>
+              <div class="text-yellow-500 text-sm">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span class="font-light text-sm">$2</span>
+            </div>
+          </div>
+          <div class="w-[300px]">
+            <img
+              class="w-[100%]"
+              src="https://wordpressthemes.live/WCG8/WCM187_wooti/grocery/wp-content/uploads/2023/10/34_02-300x300.jpg"
+              alt=""
+            />
+            <div class=" ">
+              <h3 class="text-lg font-light">
+                Papaya (Each) (Approx. 500 <br />
+                g-3500 g)
+              </h3>
+              <div class="text-yellow-500 text-sm">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span class="font-light text-sm">$2</span>
+            </div>
+          </div>
+          <div class="w-[300px]">
+            <img
+              class="w-[100%]"
+              src="https://wordpressthemes.live/WCG8/WCM187_wooti/grocery/wp-content/uploads/2023/10/31_02-300x300.jpg"
+              alt=""
+            />
+            <div class=" ">
+              <h3 class="text-lg font-light">
+                Papaya (Each) (Approx. 500 <br />
+                g-3500 g)
+              </h3>
+              <div class="text-yellow-500 text-sm">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span class="font-light text-sm">$2</span>
+            </div>
+          </div>
+          <div class="w-[300px]">
+            <img
+              class="w-[100%]"
+              src="https://wordpressthemes.live/WCG8/WCM187_wooti/grocery/wp-content/uploads/2023/10/30-300x300.jpg"
+              alt=""
+            />
+            <div class=" ">
+              <h3 class="text-lg font-light">
+                Papaya (Each) (Approx. 500 <br />
+                g-3500 g)
+              </h3>
+              <div class="text-yellow-500 text-sm">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span class="font-light text-sm">$2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- B_g -->
+    <section class="flex justify-center overflow-hidden">
+      <div class="">
+        <div class="grid grid-cols-3 gap-[30px] py-[30px]">
+          <div class="w-[32vw] relative">
+            <img
+              class="w-[100%] rounded-xl"
+              src="https://wordpressthemes.live/WCG8/WCM187_wooti/grocery/wp-content/uploads/2024/07/sub-banner1.jpg"
+              alt=""
+            />
+            <div class="absolute top-[25%] left-10">
+              <span class="py-[2px] px-3 bg-yellow-500 rounded-xl text-sm"
+                >offer</span
+              >
+              <h2 class="font-normal text-2xl py-3">
+                Mint tea, Mint jam <br />
+                20 pcs bags
+              </h2>
+              <span class="font-light text-sm py-2">Extra 25% Discount</span>
+              <br />
+              <span class="text-5xl text-red-500 font-bold">25%</span>
+            </div>
+          </div>
+          <div class="w-[32vw] relative">
+            <img
+              class="w-[100%] rounded-lg"
+              src="https://wordpressthemes.live/WCG8/WCM187_wooti/grocery/wp-content/uploads/2024/07/sub-banner2.jpg"
+              alt=""
+            />
+            <div class="absolute top-[25%] left-10">
+              <h2 class="font-normal text-2xl py-3">
+                Samrtwatch HW22 <br />
+                Long Battery Life
+              </h2>
+              <span class="font-light text-sm py-2"> Discount -35%</span>
+              <br />
+              <span class="text-5xl font-bold">$599.00</span>
+            </div>
+          </div>
+          <div class="w-[32vw] relative">
+            <img
+              class="w-[100%] rounded-lg"
+              src="https://wordpressthemes.live/WCG8/WCM187_wooti/grocery/wp-content/uploads/2024/07/sub-banner3.jpg"
+              alt=""
+            />
+            <div class="absolute top-[25%] left-10">
+              <span class="py-[2px] px-3 bg-yellow-500 rounded-xl text-sm"
+                >New</span
+              >
+              <h2 class="font-normal text-2xl py-3">
+                PCs & Monitors <br />
+                with Bluetooth 5.1
+              </h2>
+              <span class="font-light text-sm py-2"> Weekend Sale!</span>
+              <br />
+              <span class="text-5xl text-red-500 font-bold">30%</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-[30px]">
+          <div class="w-[49vw] relative">
+            <img
+              class="w-[100%] rounded-xl"
+              src="https://wordpressthemes.live/WCG8/WCM187_wooti/grocery/wp-content/uploads/2024/07/banner1.jpg"
+              alt=""
+            />
+            <div class="absolute top-[25%] left-10">
+              <span class="py-[2px] px-3 bg-yellow-500 rounded-xl text-sm"
+                >New</span
+              >
+              <h2 class="font-normal text-2xl py-3">
+                100% Fresh & Organic <br />
+                Fruits, Vegetables
+              </h2>
+              <span class="font-light text-sm py-2"> Limited Offer </span>
+              <br />
+              <span class="text-5xl text-red-500 font-bold">$29.00</span>
+            </div>
+          </div>
+          <div class="w-[49vw] relative">
+            <img
+              class="w-[100%] rounded-xl"
+              src="https://wordpressthemes.live/WCG8/WCM187_wooti/grocery/wp-content/uploads/2024/07/banner2.jpg"
+              alt=""
+            />
+            <div class="absolute top-[25%] left-10">
+              <span class="py-[2px] px-3 bg-yellow-500 rounded-xl text-sm"
+                >Sale</span
+              >
+              <h2 class="font-normal text-2xl py-3">
+                Choco & Biscuit <br />
+                Milk chocolates bar
+              </h2>
+              <span class="font-light text-sm py-2"> Weekend Sale! </span>
+              <br />
+              <span class="text-5xl text-red-500 font-bold">5%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- What Our Customers Says! -->
+    <section class="py-10">
+      <h2 class="text-5xl text-center p-[100px]">What Our Customers Says!</h2>
+      <div class="flex justify-center">
+        <div class="w-[90%] flex gap-10">
+          <div class="bg-gray-100 rounded-md">
+            <i class="fa-solid fa-quote-left text-5xl text-[#0a4254]"></i>
+            <div class="flex justify-center items-center px-10">
+              <img
+                class="rounded-[50%]"
+                src="https://wordpressthemes.live/WCG8/WCM187_wooti/grocery/wp-content/uploads/2024/07/testimonial3.png"
+                alt=""
+              />
+              <p class="font-light text-xl text-gray-500 p-10">
+                There was small mistake in the Order. In return, I got the
+                correct order and i could keep the wrony one for myself.
+              </p>
+            </div>
+          </div>
+          <div class="bg-gray-100 rounded-md">
+            <i class="fa-solid fa-quote-left text-5xl text-[#0a4254]"></i>
+            <div class="flex justify-center items-center px-10">
+              <img
+                class="rounded-[50%]"
+                src="https://wordpressthemes.live/WCG8/WCM187_wooti/grocery/wp-content/uploads/2024/07/testimonial3.png"
+                alt=""
+              />
+              <p class="font-light text-xl text-gray-500 p-10">
+                There was small mistake in the Order. In return, I got the
+                correct order and i could keep the wrony one for myself.
+              </p>
+            </div>
+          </div>
+          <div class="bg-gray-100 rounded-md">
+            <i class="fa-solid fa-quote-left text-5xl text-[#0a4254]"></i>
+            <div class="flex justify-center items-center px-10">
+              <img
+                class="rounded-[50%]"
+                src="https://wordpressthemes.live/WCG8/WCM187_wooti/grocery/wp-content/uploads/2024/07/testimonial3.png"
+                alt=""
+              />
+              <p class="font-light text-xl text-gray-500 p-10">
+                There was small mistake in the Order. In return, I got the
+                correct order and i could keep the wrony one for myself.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- lsat -->
+    <section class="overflow-hidden">
+      <div
+        class="bg-fixed h-[60vh] w-[100vw] flex items-center px-[15%] bg-no-repeat bg-cover"
+        style="
+          background-image: url('https://wordpressthemes.live/WCG8/WCM187_wooti/furniture02/wp-content/uploads/2024/09/Slider-01.jpg');
+        "
+      >
+        <div class="w-[550px] text-center flex flex-col items-center">
+          <img
+            class="py-2"
+            src="http://demo.roadthemes.com/pedona/wp-content/uploads/2018/06/text-1.png"
+            alt=""
+          />
+          <h2 class="text-4xl font-Libre">
+            <span class="text-red-500"> Interior </span> Decoration For Your
+            Home
+          </h2>
+          <p class="font-light text-sm py-5">
+            Abdul, a young, widowed Muslim man, needed to leave Syria and not be
+            delayed by the authorities in getting to Europe. The best way to do
+            this, he reasoned, was to acquire another family as cover, and he
+            found one. It was all a sham.
+          </p>
+          <button
+            class="text-md bg-[#0a4254] px-[100px] py-3 rounded-3xl my-5 text-gray-200 red-hover"
+          >
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- footee -->
+    <footer class="bg-[#0a4254] text-gray-100 py-[100px] px-[200px]">
+      <div class="flex justify-center gap-[100px]">
+        <div class="">
+          <a href="">
+            <img
+              src="http://demo.roadthemes.com/pedona/wp-content/uploads/2018/10/logos.png"
+              alt=""
+            />
+          </a>
+          <p class="text-gray-500 font-light py-5">
+            We are a team of designers and developers <br />
+            that create high quality Magento, Wordpress, Prestashop, Opencart
+          </p>
+          <p class="text-sm text-gray-200">
+            ADDRESS: 6688Princess Road, London, Greater London
+          </p>
+        </div>
+        <ul>
+          <h2 class="text-3xl py-4 font-Libre">Information</h2>
+          <li><a class="text-hover" href="">Home</a></li>
+          <li><a class="text-hover" href="">About</a></li>
+          <li><a class="text-hover" href="">Furntiure</a></li>
+          <li><a class="text-hover" href="">Grocery</a></li>
+          <li><a class="text-hover" href="">Flower</a></li>
+          <li><a class="text-hover" href="">Food</a></li>
+          <li><a class="text-hover" href="">Sport</a></li>
+          <li><a class="text-hover" href="">Contact Us</a></li>
+          <li><a class="text-hover" href="">Location</a></li>
+        </ul>
+        <ul>
+          <h2 class="text-3xl py-4 font-Libre">Customer Care</h2>
+          <li><a class="text-hover" href="">Clothing</a></li>
+          <li><a class="text-hover" href="">Shoes </a></li>
+          <li><a class="text-hover" href="">Handbag</a></li>
+          <li><a class="text-hover" href="">Accessories</a></li>
+          <li><a class="text-hover" href="">Fashion</a></li>
+        </ul>
+        <div class="">
+          <h2 class="text-3xl py-4 font-Libre">Join Our Newsletter Now</h2>
+          <p class="font-light text-sm text-gray-400 py-5">
+            Get E-mail updates about our latest shop and special offers.
+          </p>
+          <div class="">
+            <input
+              class="py-1 px-3 text-gray-700 font-light rounded-sm w-[320px]"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="">
+              <i
+                class="fa-solid fa-magnifying-glass text-xl text-gray-200 px-3"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
